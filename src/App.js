@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import PostItem from "./components/PostItem/PostItem";
 import { items } from "./redux/postSelectors";
@@ -12,7 +12,11 @@ function App() {
   const [comment, setComment] = useState("");
   const dispatch = useDispatch();
   const posts = useSelector(items);
-  // console.log(posts);
+
+  useEffect(() => {
+    dispatch(postOperations.currentItems());
+  }, []);
+
   const onStart = () => {
     setStart(false);
   };

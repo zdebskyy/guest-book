@@ -27,4 +27,5 @@
 .text {
   color: black;
   text-align: justify;
+  display: block;
 }

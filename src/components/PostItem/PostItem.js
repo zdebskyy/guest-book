@@ -13,10 +13,10 @@ const PostItem = ({ item }) => {
       <li className={styles.postItem}>
         <div className={styles.userSection}>
           <p className={styles.author}>
-            Author : <p className={styles.text}>{item.name}</p>
+            Author : <span className={styles.text}>{item.name}</span>
           </p>
           <p className={styles.comment}>
-            Comment : <p className={styles.text}>{item.comment}</p>
+            Comment : <span className={styles.text}>{item.comment}</span>
           </p>
         </div>
         <div className={styles.dateSection}>

@@ -12,8 +12,17 @@ const addPost = (post) => (dispatch) => {
     .catch((err) => dispatch(postActions.addPostError(err)));
 };
 
+const currentItems = () => (dispatch) => {
+  dispatch(postActions.currentPostRequest());
+  axios
+    .get("/current")
+    .then((res) => dispatch(postActions.currentPostSuccess(res.data)))
+    .catch((err) => dispatch(postActions.currentPostError(err)));
+};
+
 const postOperations = {
   addPost,
+  currentItems,
 };
 
 export default postOperations;
