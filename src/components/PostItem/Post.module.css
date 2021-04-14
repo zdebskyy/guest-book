@@ -1,0 +1,30 @@
+.postItem {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+.dateSection {
+  width: 30%;
+  padding: 10px;
+}
+.userSection {
+  width: 70%;
+  border-right: 1px solid black;
+  padding: 10px;
+}
+.author {
+  font-size: 18px;
+  color: #2f80ed;
+}
+.comment {
+  font-size: 18px;
+  color: #2f80ed;
+}
+.text {
+  color: black;
+  text-align: justify;
+}
