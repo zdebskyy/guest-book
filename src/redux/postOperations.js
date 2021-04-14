@@ -2,7 +2,7 @@ import axios from "axios";
 import postActions from "./postActions";
 
 axios.defaults.baseURL =
-  "http://frozen-harbor-43166.herokuapp.com/api/guest-book";
+  "https://frozen-harbor-43166.herokuapp.com/api/guest-book";
 
 const addPost = (post) => (dispatch) => {
   dispatch(postActions.addPostRequest());

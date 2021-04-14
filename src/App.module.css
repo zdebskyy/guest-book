@@ -50,6 +50,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .form {
   display: flex;
@@ -92,13 +94,19 @@
   align-items: center;
 }
 .noContent {
-  padding-top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 40px;
   text-align: center;
   color: rgb(248, 246, 246);
 }
 
 .commentContainer {
+  position: relative;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   width: 65%;
   height: 400px;
   background: #56ccf2;

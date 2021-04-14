@@ -1,8 +1,12 @@
 import React from "react";
+import { DateTime } from "luxon";
 import styles from "./Post.module.css";
 
 const PostItem = ({ item }) => {
-  const date = Date.now();
+  const currentTime = DateTime.now();
+  const date = DateTime.fromISO(currentTime).toLocaleString(
+    DateTime.DATETIME_MED
+  );
 
   return (
     <>
@@ -16,7 +20,8 @@ const PostItem = ({ item }) => {
           </p>
         </div>
         <div className={styles.dateSection}>
-          <span>Date : {date}</span>
+          <span>Date : </span>
+          <p>{date}</p>
         </div>
       </li>
     </>

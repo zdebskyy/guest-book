@@ -31,7 +31,6 @@ function App() {
     setName("");
     setComment("");
     dispatch(postOperations.addPost(post));
-    console.log(post);
   };
   return (
     <div className={styles.container}>
