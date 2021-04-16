@@ -3,7 +3,7 @@ import { DateTime } from "luxon";
 import styles from "./Post.module.css";
 
 const PostItem = ({ item }) => {
-  const currentTime = DateTime.now();
+  const currentTime = item.createdAt;
   const date = DateTime.fromISO(currentTime).toLocaleString(
     DateTime.DATETIME_MED
   );
