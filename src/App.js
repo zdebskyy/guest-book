@@ -29,7 +29,7 @@ function App() {
   const submitForm = (e) => {
     e.preventDefault();
     const post = {
-      name,
+      name: name ? name : "Anonymous",
       comment,
     };
     setName("");
